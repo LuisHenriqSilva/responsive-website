@@ -31,3 +31,25 @@
 .chamada__botao {
   width: 100%;
 }
+
+/* screen -> todos os dispositivos que tenham tela */
+/* print -> dispositivos que não tenham tela (imprimir um boleto na impressora) */
+@media screen and (min-width: 768px) {
+  .chamada__texto {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .chamada {
+    background-image: url(../img/bg-intro.jpg);
+    background-size: cover;
+
+    padding-top: 8.5rem;
+  }
+
+  .chamada__titulo {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+}
